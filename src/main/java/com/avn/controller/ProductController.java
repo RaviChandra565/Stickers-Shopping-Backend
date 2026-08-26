@@ -16,7 +16,7 @@ import com.avn.service.ProductService;
 
 @RestController
 @RequestMapping("/api/v1/products")
-@CrossOrigin(origins = {"http://localhost:5173", "https://stickers-shopping-frontend.vercel.app"})
+@CrossOrigin(origins = "*")
 public class ProductController {
 	
 	@Autowired
