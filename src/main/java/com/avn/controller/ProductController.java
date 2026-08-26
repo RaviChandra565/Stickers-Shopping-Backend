@@ -13,9 +13,10 @@ import com.avn.dto.ProductDto;
 import com.avn.model.Product;
 import com.avn.service.ProductService;
 //@Controller + @ResponseBody
+
 @RestController
 @RequestMapping("/api/v1/products")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://stickers-shopping-frontend.vercel.app"})
 public class ProductController {
 	
 	@Autowired
